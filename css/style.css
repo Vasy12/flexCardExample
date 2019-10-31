@@ -1,0 +1,92 @@
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+    --main-bg-color: blue;
+    --userImageContainerSize: 170px;
+    --userImageContainerBorderWidth: 6px;
+}
+
+
+body {
+    background-color: orange;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.userCardContainer {
+
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+.userCardContainer > header {
+    background-image: url("../img/mountains_clouds.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+    width: 100%;
+
+}
+
+
+
+
+.userImageContainer {
+
+    height: var(--userImageContainerSize);
+    width: var(--userImageContainerSize);
+    border-radius: 50%;
+    border-style: solid;
+    border-color:  var(--main-bg-color);
+    border-width: var(--userImageContainerBorderWidth);
+    box-sizing: border-box;
+    background-color: red;
+    margin: calc(var(--userImageContainerSize) / 2 * -1);
+    overflow: hidden;
+}
+
+.userImageContainer img {
+    object-fit: cover;
+    width: calc(var(--userImageContainerSize) - var(--userImageContainerBorderWidth) * 2);
+}
+
+.userFullName {
+    text-transform: uppercase;;
+}
+
+.contactLink{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+
+    cursor: pointer;
+}
+
+.contactLink + .contactLink {
+    margin-left: 10px;
+}
+
+footer{
+    margin-top: auto;
+}
