@@ -19,20 +19,22 @@ body {
 /*CONTAINER OF ALL CARDS*/
 .flexContainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
+    min-height: 600px;
+
+    background-color: rebeccapurple;
 }
 
 /**CARD CONTAINER STYLES*/
 .userCardContainer {
-
+    border: 4px solid red;
     background-color: var(--main-bg-color);
     border-radius: 20px;
     overflow: hidden;
-    min-width: 280px;
-    max-width: 300px;
-
     box-sizing: border-box;
+    flex-basis: 250px;
+
 
 }
 
