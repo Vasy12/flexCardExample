@@ -7,7 +7,7 @@
 
 :root {
     --main-bg-color: white;
-    --userImageContainerSize: 170px;
+    --userImageContainerSize: 160px;
     --userImageContainerBorderWidth: 6px;
 }
 
@@ -29,8 +29,8 @@ body {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     overflow: hidden;
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 280px;
+    max-width: 300px;
 
     box-sizing: border-box;
 
